@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!--
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/alpaca@1.5.27/dist/alpaca/bootstrap/alpaca.min.js"></script>
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FPW-Highscore</title>
+<!-- Externe CSS-Datei einbinden -->
+<link rel="stylesheet" href="check_in.css">
+</head>
+<body>
+
+<header id="colorfeedback">
+</header>
+
+<main id="main">
+	<div id="hint" class="feedback scan-group">
+		<span class="scan-group">Scanne den Gruppen-Code</span>
+		<div class="scan-item">Scanne eine Aufgabe für die Gruppe: <span class="group"></span></div>
+	</div>
+	<div id="reader"></div>
+	
+	<div id="overlay" class="hidden">
+		<button id="close-overlay" class="close-button">Schließen</button>
+		<div id="overlay-content">
+			<h1></h1>
+			<div class="meta"></div>
+			<div class="debug"></div>
+		</div>
+	</div>
+</main>
+
+<div id="form"></div>
+
+
+<footer>
+DB-Status und aktuelle Uhrzeit, vielleicht noch Versionsnummer...
+</footer>
+
+<!-- Externe JavaScript-Datei einbinden -->
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+<script src=check_in.js></script>
+
+</body>
+</html>

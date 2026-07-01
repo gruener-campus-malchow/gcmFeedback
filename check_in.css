@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* Globale Styles */
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4a69bd, #6c5ce7);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    /*padding: 2rem 1rem;*/
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Hauptinhalt */
+main {
+    max-width: 1024px;
+    margin: 2rem auto;
+    /*padding: 0 1rem;*/
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.alert{
+    color: red;
+    font-size: 0.3em;
+}
+
+
+.pause{
+    background: grey;
+}
+
+main h1 {
+    color: #2d3436;
+    font-size: 1em;
+    /*margin: 0 0 1rem;*/
+    /*padding: 1.5rem 1rem 0.5rem;*/
+    border-bottom: 3px solid #00b894;
+}
+
+main p {
+    font-size: 1.1em;
+    color: #636e72;
+    padding: 0 1rem 1.5rem;
+}
+
+/* Footer */
+footer {
+    background: #2d3436;
+    color: #dfe6e9;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9em;
+    margin-top: 2rem;
+    border-top: 4px solid #00b894;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        font-size: 1em;
+        /*padding: 1.5rem 1rem;*/
+    }
+    main h1 {
+        font-size: 1.5em;
+        /*padding: 1rem 1rem 0.5rem;*/
+    }
+}
+
+.hidden {
+	display: none;
+}
+
+#overlay{
+position: fixed; /* Sit on top of the page content */
+width: 100%; /* Full width (cover the whole page) */
+height: 100%; /* Full height (cover the whole page) */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay-content{
+position: absolute;
+top: 50%;
+left: 50%;
+font-size: 2em;
+color: white;
+transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+}
+
+.center {
+    text-align: center;
+    display: grid;
+
+}
+
+.centered {
+    justify-self: center;
+    margin: 3px;
+}
+
+.QRCodeWrapper {
+    justify-self: center;
+    background-color:white;
+    margin: 10px;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.2;
+    color:white;
+    /*color:black;*/
+
+    background-color:black;
+
+    /*background-color:white;*/
+
+    margin-bottom: 20px;
+    padding: 20px;
+
+    width: fit-content;
+
+}
+
+.feedback{
+     font-size: 1.2em;
+     background-color:white;
+     margin: 2rem auto;
+     padding: 0 1rem;
+}
+
+#hint:not(.scan-group) .scan-group {
+	display: none;
+}
+
+#hint:not(.scan-item) .scan-item {
+	display: none;
+}
+
+td, th, table, tr{
+    border: 1px solid red;
+    border-collapse: collapse;
+    padding: 8px;
+    background-color:white;
+    font-size: 1em;
+    color: black;
+}
+
+
+.close-button{
+    position: fixed;      /* Fixiert den Button relativ zum Viewport */
+    top: 20px;            /* Abstand vom oberen Rand */
+    right: 20px;          /* Abstand vom rechten Rand */
+    z-index: 9999;        /* Sehr hoher Stapelwert, damit der Button über allem liegt */
+
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.2;
+    color:white;
+    /*color:black;*/
+
+    background-color:red;
+
+    /*background-color:white;*/
+
+    margin-bottom: 20px;
+    padding: 20px;
+
+    width: fit-content;
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!--
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/alpaca@1.5.27/dist/alpaca/bootstrap/alpaca.min.js"></script>
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FPW-Highscore</title>
+<!-- Externe CSS-Datei einbinden -->
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header id="colorfeedback">
+Key: <input type="password" id="apikey">
+<!--<button id="checkin">Check In</button>
+<button id="register">Registrieren</button>
+<button id="reports">Berichte</button>-->
+<textarea>
+- index -> student vs. teacher
+- student: event -> group -> item
+- teacher: event -> auth (eventID+KEY)    -> group -> item -> feedback (text-templates, credits)
+                            -> highscore
+                            -> reset
+- feedback: templated, veryfast, text, mark
+
+{
+  "positiv": [
+    "Eigeninitiative",
+    "Selbstständige Erarbeitung",
+    "Strukturierte Herangehensweise",
+    "Logische Argumentation",
+    "Zielgerichtete Planung",
+    "Effiziente Wiederholung",
+    "Kritische Quellenauswahl",
+    "Systematische Vorbereitung",
+    "Konstruktive Fehleranalyse",
+    "Faire Aufgabenverteilung"
+  ],
+  "verbesserungspotenzial": [
+    "Straffere Zeitplanung",
+    "Früherer Arbeitsbeginn",
+    "Puffer einplanen",
+    "Transferaufgaben üben",
+    "Kritischere Quellenprüfung",
+    "Fehleranalyse vertiefen",
+    "Klarere Gliederung",
+    "Weniger Abhängigkeit von anderen",
+    "Intensivere Vorbereitung",
+    "Sicherere mündliche Darstellung"
+  ]
+}
+
+</textarea>
+
+</header>
+
+
+
+<main id="main">
+
+<a id="check-in" href="check_in.html" class="schoner-button actionbutton">Gruppen scannen</a>
+<br>
+<a id="highscore" class="schoner-button actionbutton">Highscore</a>
+<br>
+<a id="reset" class="schoner-button actionbutton">Zurücksetzen</a>
+<br>
+</main>
+
+<div id="form"></div>
+
+
+<footer>
+DB-Status und aktuelle Uhrzeit, vielleicht noch Versionsnummer...
+</footer>
+
+<!-- Externe JavaScript-Datei einbinden -->
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+<script src=register.js></script>
+
+</body>
+</html>

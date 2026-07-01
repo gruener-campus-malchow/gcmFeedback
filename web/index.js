@@ -11,7 +11,7 @@ document.addEventListener("alpine:init", () => {
         },
 
         initScanner() {
-            this.scanner = new Html5QrcodeScanner("qr-code-scanner", { fps: 10, qrbox: 250 });
+            this.scanner = new Html5QrcodeScanner("qr-code-scanner", { fps: 10, qrbox: 500 });
             this.scanner.render(this.onScanSuccess.bind(this), this.onScanError);
         },
 

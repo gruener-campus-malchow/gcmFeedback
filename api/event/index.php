@@ -11,41 +11,6 @@ function get_request_handler($query) {
     $result[0]['debug'] = 'Prüfe, ob event existiert.';
     $result[0]['event'] = 'Just to do right now.';
 
-    /*
-    global $database;
-
-    //$result = $database->query("SELECT * FROM personen WHERE externe_id = ?",array('$query[id]'));
-    $result = $database->query("SELECT * FROM personen WHERE externe_id = ?",array($query['id']));
-    $result[0]['details']='
-    <h1>much more information</h1>
-    <table class="data">
-    <tr>
-    <th>Überschrift 1</th>
-    <th>Überschrift 2</th>
-    <th>Überschrift 3</th>
-    <th>Überschrift 4</th>
-    </tr>
-    <tr>
-    <td>Eintrag Erste Zeile 1</td>
-    <td>Eintrag Erste Zeile 2</td>
-    <td>Eintrag Erste Zeile 3</td>
-    <td>Eintrag Erste Zeile 4</td>
-    </tr>
-    <tr>
-    <td>Eintrag Zeile 1</td>
-    <td>Eintrag Zeile 2</td>
-    <td>Eintrag Zeile 3</td>
-    <td>Eintrag Zeile 4</td>
-    </tr>
-    <tr>
-    <td>Eintrag Letzte Zeile 1</td>
-    <td>Eintrag Letzte Zeile 2</td>
-    <td>Eintrag Letzte Zeile 3</td>
-    <td>Eintrag Letzte Zeile 4</td>
-    </tr>';
-
-    */
-
     echo json_encode($result);
 }
 

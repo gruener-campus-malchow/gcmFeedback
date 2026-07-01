@@ -12,18 +12,18 @@
 </head>
 
 <body>
-    <div x-data="main">
+    <div id="main" x-data="main">
         <div id="error" x-show="error">
             <span x-text="error"></span>
             <button @click="error=undefined">X</button>
         </div>
         <div id="hint" x-show="hint" x-text="hint"></div>
         <div id="qr-code-scanner" x-init="initScanner"></div>
-        <form x-data="{ manualID: '' }" @submit.prevent="handleID(manualID)">
+        <form id="input" x-data="{ manualID: '' }" @submit.prevent="handleID(manualID)">
             <input type="text" x-model="manualID" placeholder="Gruppen- oder Admin-ID">
             <button :disabled="!manualID">&#x2713;</button>
         </form>
-        <button @click="createNewEvent">Neues Event</button>
+        <button class="buottons" @click="createNewEvent">Neues Event</button>
     </div>
 </body>
 
